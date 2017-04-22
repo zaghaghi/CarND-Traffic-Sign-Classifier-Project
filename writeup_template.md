@@ -183,3 +183,18 @@ For the first image, the model is relatively sure that this is a stop sign (prob
 
 
 For the second image ... 
+
+| Model      | Valid     | Test    | Batch    | Epoch   |  Description      | Color Space|
+|:----------:|:---------:|:-------:|:--------:|:-------:|:-----------------:|:----------:|
+| LeNet      | 94.1      | 92.7    | 128      | 50      |                   | RGB |
+| MsLeNet    | 94.1      | 93.3    | 128      | 80      | Multi-Scale LeNet | RGB |
+| MsLeNet    | 91.8      | 92.3    | 256      | 100     |                   | RGB |
+| MsLeNet    | 93.4      | 93.2    | 128      | 100     |                   | RGB |
+| MsLeNet+YUV| 93.0      | 92.5    | 128      | 100     |                   | YUV |
+| Inception  | 97.2      | 96.5    | 128      | 100     | YUV -> (0.0-1.0)  | YUV |
+| Inception  | 96.7      | 95.6    | 128      | 100     | YUV -> (0.1-0.9)  | YUV |
+| Inception  | 95.9      | 94.7    | 128      | 100     | YUV -> Y          | Y   |
+| Inception  | 98.8      | 96.7    | 128      | 100     | RGB               | RGB |
+| Inception  | 97.1      | 96.2    | 128      | 100     | RGB               | RGB |
+| Inception  | 96.0      | 94.4    | 128      | 100     |                   | Grayscale|
+| Inception  | 96.4      | 95.5    | 128      | 100     | Half inception    | RGB |
